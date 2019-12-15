@@ -14,6 +14,8 @@
 		$main = $('#main'),
 		$navPanelToggle, $navPanel, $navPanelInner;
 
+		var theLanguage = $('html').attr("lang");
+
 	// Breakpoints.
 		breakpoints({
 			default:   ['1681px',   null       ],
@@ -126,10 +128,17 @@
 	// Nav Panel.
 
 		// Toggle.
+		if(theLanguage == 'zh') 
+		{
 			$navPanelToggle = $(
-				'<a href="#navPanel" id="navPanelToggle"></a>'
-			)
-				.appendTo($wrapper);
+				'<a href="#navPanel" id="navPanelToggle">目录</a>'
+			).appendTo($wrapper);
+		}
+		else {
+			$navPanelToggle = $(
+				'<a href="#navPanel" id="navPanelToggle">Menu</a>'
+			).appendTo($wrapper);
+		}
 
 			// Change toggle styling once we've scrolled past the header.
 				$header.scrollex({
