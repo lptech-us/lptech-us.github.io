@@ -2348,6 +2348,7 @@ input, select, textarea {
 		padding: 0 1rem;
 		text-decoration: none;
 		width: 100%;
+		resize: vertical;
 	}
 
 		input[type="text"]:invalid,
@@ -2986,13 +2987,13 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			header br {
-				display: none;
+				display: none; 
 			}
 
 		}
 
 		@media screen and (max-width: 736px) {
-
+			
 			header.major {
 				margin: 0 0 2rem 0;
 			}
@@ -3477,13 +3478,13 @@ input, select, textarea {
 			}
 
 				#intro h1 {
-					font-size: 3.25rem;
+					font-size: 3.5rem;
 					line-height: 1.1;
 					margin-bottom: 1rem;
 				}
 
 				#intro p {
-					font-size: 1rem;
+					font-size: 1.25rem;
 					margin-top: 0rem;
 				}
 
@@ -3887,12 +3888,12 @@ input, select, textarea {
 			@media screen and (max-width: 980px) {
 
 				#main > .posts > * {
-					width: 50%;
+					width: 100%;
 				}
 
 				#main > .posts > * {
 					padding: 2.5rem;
-					width: 50%;
+					width: 100%;
 				}
 
 			}
