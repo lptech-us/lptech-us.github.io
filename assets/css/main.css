@@ -2647,6 +2647,9 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 736px) {
+			.image.logo {
+				width: 96px;
+			}
 
 			.image.fit {
 				margin: 2rem 0;
