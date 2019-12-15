@@ -127,7 +127,7 @@
 
 		// Toggle.
 			$navPanelToggle = $(
-				'<a href="#navPanel" id="navPanelToggle">目录</a>'
+				'<a href="#navPanel" id="navPanelToggle"></a>'
 			)
 				.appendTo($wrapper);
 
