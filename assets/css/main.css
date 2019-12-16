@@ -147,8 +147,16 @@ input, select, textarea {
 		color: #212931;
 	}
 
-	body, input, select, textarea {
+	body:lang(en), input:lang(en), select:lang(en), textarea:lang(en) {
+		font-family: "Merriweather", Georgia;
+	}
+
+	/* body:lang(zh), input:lang(zh), select:lang(zh), textarea:lang(zh) {
 		font-family: "Merriweather", Georgia, serif;
+	} */
+
+	body, input, select, textarea {
+
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 2.375;
@@ -180,8 +188,15 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1:lang(en), h2:lang(en), h3:lang(en), h4:lang(en), h5:lang(en), h6:lang(en) {
+		font-family: "Source Sans Pro", Helvetica;
+	}
+	
+	/* h1:lang(zh), h2:lang(zh), h3:lang(zh), h4:lang(zh), h5:lang(zh), h6:lang(zh) {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
+	} */
+
+	h1, h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -2924,7 +2939,7 @@ input, select, textarea {
 		}
 
 		header > p {
-			font-style: normal;
+			font-style: italic;
 		}
 
 		header > h1 + p {
@@ -3396,7 +3411,7 @@ input, select, textarea {
 
 		#intro p {
 			font-size: 1.5rem;
-			font-style: normal;
+			font-style: italic;
 			margin-top: -0.25rem;
 			text-align: center;
 		}
